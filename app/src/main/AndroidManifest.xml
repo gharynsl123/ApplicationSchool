@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gharin.aplikasiidn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IDNAct"></activity>
+        <activity android:name=".AsramaAct" />
+        <activity android:name=".LokasiIDN" />
+        <activity android:name=".Prestasi" />
+        <activity android:name=".Struktur" />
+        <activity android:name=".Pjnya">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Eskul" />
+        </activity>
+        <activity android:name=".JDeskul">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Eskul" />
+        </activity>
+        <activity android:name=".KelasAct" />
+        <activity android:name=".List" />
+        <activity android:name=".Miqdad" />
+        <activity android:name=".Harits" />
+        <activity android:name=".Gharyn" />
+        <activity android:name=".Eskul">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Pelajaran">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Asrama">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Kelas">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
